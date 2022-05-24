@@ -11,15 +11,17 @@
 %channelTextArea {
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.15s ease-in-out;
+  &:focus-within {
+    box-shadow: 0 0 2px calc((var(--text-area-effect) * -4px) + 2px) $main-color;
+  }
   &:after {
     display: block;
     content: '';
-    border-bottom: 2px solid $main-color;
+    border-bottom: calc(var(--text-area-effect) * 2px) solid $main-color;
     opacity: 0.5;
     transform: scaleX(0);
     transition: all 0.2s linear 0s;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin: 0 4px;
   }
   &:hover:after {
     opacity: 0.5;
