@@ -23,7 +23,8 @@ fs.readdirSync(addons).forEach(file => {
     }, function(err, result) {
         if(err) console.log(err);
         if(result) {
-            fs.writeFile(`${outputPath}/${name}.css`, result.css, err => {
+            const output = result.css.toString().replace(/\*\/\n/g, '*/\n\n');
+            fs.writeFile(`${outputPath}/${name}.css`, output, err => {
                 if(err) console.log(err);
                 else console.log(`Successfully wrote ${name}.css`);
             });

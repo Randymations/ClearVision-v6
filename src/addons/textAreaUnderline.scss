@@ -1,7 +1,31 @@
+/**
+ * @name ClearVision Add-on: Text Area Underline
+ * @author Randymations
+ * @version 1.0.0
+ * @description Dynamic text area underline on hover or focus
+ * @source https://github.com/ClearVision/Addons
+ * @website https://clearvision.github.io
+ * @invite 2fKpjAR
+ * @authorId 384167892012498944
+ */
+
+/*
+This theme is designed for Clearvision-v6 but is applicable to any other theme.
+
+If you are using ClearVision or another theme, copy and paste the following line below other imports:
+@import url(https://clearvision.github.io/Addons/textAreaUnderline.css);
+
+Additionally, if you are using a theme that is not ClearVision, copy the contents of root into your theme's root.
+
+If you are not using another theme, uncomment root.
+*/
+
+/*
 :root {
     --main-color: var(--brand-experiment);
     --background-color: var(--channeltextarea-background);
 } 
+*/
 
 %channelTextArea {
     background: var(--background-color, rgba(0, 0, 0, 0.6));
