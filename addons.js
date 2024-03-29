@@ -4,7 +4,7 @@ const util = require('util');
 const path = require('path');
 
 const addons = './src/addons';
-const outputPath = './public'
+const outputPath = './public';
 const data = `\
 $version: 'x';
 @import 'lib/selectors/selectorPlaceholders';
